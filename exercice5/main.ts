@@ -34,7 +34,8 @@ class ShowTicket {
     <p>Nom d'utilisateur : ${ this.userName }</p>
     <p>Nom du groupe : ${ this.band }</p>
     <p>Date du concert : ${ this.date }</p>
-    <p>Lieu du concert : ${ this.location }</p>`
+    <p>Lieu du concert : ${ this.location }</p>
+    `
     if (this.price !== "") {
       showTicketContent = showTicketContent + `<p>Prix de la place : ${ this.price }</p>`
     }
@@ -43,7 +44,7 @@ class ShowTicket {
   }
 }
 
-let firstShowTicket: ShowTicket = new ShowTicket("Val", "Daft Punk", "28/06/20", "Arènes de Nîmes", "35");
+let firstShowTicket: ShowTicket = new ShowTicket("Val", "Daft Punk", "28/06/20", "Arènes de Nîmes", "35.00€");
 let secondShowTicket: ShowTicket = new ShowTicket("Roxanne", "Phoenix", "06/08/20", "Dock des Suds");
 
 console.log(firstShowTicket.showTicketDetail());
